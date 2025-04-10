@@ -286,6 +286,9 @@ button.main-button:hover {
   margin-bottom: 25px;
 }
 
+
+
+
 .center-heading h2 em {
   font-style: normal;
   color: #f4813f;
@@ -638,9 +641,6 @@ header
     padding: 0px;
   }
 
-  .header-area .logo {
-    margin-left: 30px;
-  }
 
   .header-area .menu-trigger {
     display: block !important;
@@ -758,7 +758,6 @@ welcome
 .welcome-area .header-text h1 {
   font-weight: 900;
   font-size: 52px;
-  line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
   color: #191a20;
@@ -836,7 +835,7 @@ about
 */
 
 #about {
-  padding: 100px 0px;
+  padding: 100px 0;
   position: relative;
   z-index: 9;
 }
@@ -851,32 +850,39 @@ about
   border-radius: 5px;
   padding: 60px 30px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .features-item h2 {
-  z-index: 9;
   position: absolute;
   top: 15px;
   left: 45px;
   font-size: 100px;
   font-weight: 600;
   color: #fdefe9;
+  z-index: 9;
 }
 
 .features-item img {
-  z-index: 10;
   position: relative;
   max-width: 100%;
   margin-bottom: 40px;
   width: 200px;
+  z-index: 10;
 }
 
 .features-item h4 {
-  margin-top: 0px;
+  margin: 0 0 25px;
   font-size: 22px;
   color: #1e1e1e;
-  margin-bottom: 25px;
+}
+
+.features-item p {
+  text-align: start;
+  font-size: 15px;
+  color: #888;
+  line-height: 25px;
+  margin-bottom: 5px;
 }
 
 .features-item .main-button {
@@ -937,130 +943,112 @@ promotion
 }
 
 
-/*
---------------------------------------------
-testimonials
---------------------------------------------
+/* 
+---------------------------------------------
+como funciona
+---------------------------------------------
 */
-.right-image-decor {
-  background-image: url(../images/right-bg-decor.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  position: absolute;
-  width: 100%;
-  display: inline-block;
-  height: 110%;
-  margin-top: -200px;
+
+/* Estilo para la sección de testimonios */
+#testimonials {
+  padding: 100px 0; /* Espaciado superior e inferior */
+  background-color: #f8f9fa; /* Fondo claro */
+  text-align: center; /* Centrar el contenido */
 }
 
-#testimonials {
+#testimonials .center-heading h2 {
+  font-size: 36px; /* Tamaño del título */
+  font-weight: 700; /* Negrita */
+  color: #343a40; /* Color del texto */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+#testimonials .center-heading h2 em {
+  font-style: normal;
+  color: #f4813f; /* Color destacado */
+}
+
+#testimonials .owl-carousel .item {
+  background: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 30px; /* Espaciado interno */
+  margin: 15px; /* Espaciado externo */
+  text-align: center; /* Centrar el contenido */
+}
+
+#testimonials .testimonial-content img {
+  max-width: 100px; /* Tamaño máximo de la imagen */
+  margin-bottom: 20px; /* Espaciado inferior */
+  border-radius: 50%; /* Imagen circular */
+  border: 3px solid #f4813f; /* Borde alrededor de la imagen */
+}
+
+#testimonials .testimonial-content h4 {
+  font-size: 20px; /* Tamaño del título */
+  font-weight: 600; /* Negrita */
+  color: #343a40; /* Color del texto */
+  margin-bottom: 15px; /* Espaciado inferior */
+}
+
+#testimonials .testimonial-content p {
+  font-size: 16px; /* Tamaño del texto */
+  color: #6c757d; /* Color del texto */
+  line-height: 1.6; /* Altura de línea */
+}
+
+#testimonials .owl-carousel .owl-nav {
+  display: none; /* Ocultar los controles de navegación predeterminados */
+}
+
+#testimonials .owl-carousel .owl-dots {
+  margin-top: 20px; /* Espaciado superior */
+}
+
+#testimonials .owl-carousel .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background: #ddd; /* Color de los puntos */
+  border-radius: 50%; /* Forma circular */
+  display: inline-block;
+  transition: background 0.3s ease; /* Animación suave */
+}
+
+#testimonials .owl-carousel .owl-dots .owl-dot.active {
+  background: #f4813f; /* Color del punto activo */
+}
+
+/*
+---------------------------------------------
+pricing
+---------------------------------------------
+
+*/
+#pricing {
   padding-top: 100px;
   position: relative;
   z-index: 9;
 }
 
-#testimonials .item {
-  position: relative;
-}
-
-#testimonials .item .testimonial-content {
-  background: rgb(244, 129, 63);
-  background: linear-gradient(145deg, rgba(244, 129, 63, 1) 0%, rgba(241, 85, 106, 1) 100%);
-  margin-left: 60px;
-  padding: 40px 30px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-#testimonials .item .testimonial-content ul li {
-  display: inline-block;
-  margin: 0px 1px;
-}
-
-#testimonials .item .testimonial-content ul li i {
-  color: #fff;
-  font-size: 13px;
-}
-
-#testimonials .item .testimonial-content h4 {
-  font-size: 22px;
-  margin-top: 20px;
-  color: #fff;
-}
-
-#testimonials .item .testimonial-content p {
-  color: #fff;
-  font-style: italic;
-  font-weight: 200;
-  margin: 20px 0px 15px 0px;
-}
-
-#testimonials .item .testimonial-content span {
-  color: #fff;
-  font-weight: 200;
-  font-size: 13px;
-}
-
-#testimonials .author img {
-  max-width: 120px;
-  margin-bottom: -60px;
-}
-
-.owl-carousel .owl-nav button.owl-next span {
-  z-index: 10;
-  top: 45%;
-  border-radius: 10px;
-  font-size: 46px;
-  color: #fff;
-  right: -210px;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  display: inline-block;
-  background: rgb(244, 129, 63);
-  background: linear-gradient(145deg, rgba(244, 129, 63, 1) 0%, rgba(241, 85, 106, 1) 100%);
-  position: absolute;
-}
-
-.owl-carousel .owl-nav button.owl-prev span {
-  z-index: 9;
-  top: 30%;
-  border-radius: 10px;
-  font-size: 46px;
-  color: #fff;
-  right: -150px;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  display: inline-block;
-  background: rgb(244, 129, 63);
-  background: linear-gradient(145deg, rgba(244, 129, 63, 1) 0%, rgba(241, 85, 106, 1) 100%);
-  position: absolute;
-}
-
-@media screen and (max-width: 1060px) {
-  .owl-carousel .owl-nav {
-    display: none !important;
-  }
-}
-
-
 .pricing-section {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
   padding: 40px 20px; /* Espaciado interno */
   text-align: center; /* Centrar el contenido */
   border-radius: 10px; /* Bordes redondeados */
-  margin: 250px auto; /* Espaciado externo */
   max-width: 600px; /* Ancho máximo */
+  margin: auto;
+  margin-top: 100px; /* Espacio superior */
 }
 
 @media (max-width: 768px) {
   .pricing-section {
-    margin: 250px 15px; /* Margen lateral para dispositivos móviles */
+    margin-left:15px; /* Margen lateral para dispositivos móviles */
+    margin-right:15px; /* Margen lateral para dispositivos móviles */
   }
 }
+
+
 
 .pricing-section h3 {
   font-size: 42px; /* Tamaño del título */
